@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;1,9..40,100&family=Inter+Tight:wght@100&display=swap');
+
+
+body{
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+
+
+#header::after{
+  position: fixed;
+  background-image: url(".././public/cinema.png");
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  content: '';
+  left: 0;
+  z-index: -1;
+}
+.card-relative {
+  position: relative; 
+}
+
+.review-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  z-index: 99999;
+}
+
+.review-form::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #FFFFFF;
+  opacity: .95;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  border-radius: 4px;
+}
+
+.card.userReviews{
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.card, .modal-content, .card-body, .review-form::after{
+  background: black;
+  color: white;
+}
+
+.card {
+    border: 1px solid #111111;
+}
+
+.card:hover{
+  border: 1px solid #222222;
+  box-shadow: 1px 1px 8px #000000;
+}
+
+.modal-header .btn-close{
+  color: white;
+}
+
+.modal-body{
+  text-align: center;
+}
+.modal-body .img-fluid{
+  width: 65%;
+}
+
+input#resenaInput{
+  height: 204px;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
